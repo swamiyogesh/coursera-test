@@ -1,0 +1,96 @@
+
+* {
+  box-sizing: border-box;
+font-family: Helvetica;
+}
+
+section {
+    border: 1px solid black;
+    background-color: #b5c4d2;
+    margin: 10px;
+    height:180px;
+}
+
+body {
+    background-color: #d6d6d6;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.head{
+	position: relative;
+	top:0;
+	left :100px;
+	background: blue;
+}
+
+section>h2 {
+    float: right;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0;
+    width: 230px;
+    text-align: center;
+    font-style: Times;
+    font-size: 24px;
+    font-weight: bold;
+    height: 45px;
+    padding-top: 10px;
+}
+
+section>p {
+    padding: 40px 15px 15px 15px;
+}
+
+section.Albert>h2 {
+    background-color: #76b8db;
+}
+
+section.Newton>h2 {
+    background-color: #4f7acd;
+}
+
+section.Bohr>h2 {
+    color: #e2e2e2;
+    background-color: #10328a;
+}
+
+
+.row{
+	width:100%;
+}
+
+
+/*Desktop Version*/
+@media(min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+
+/*Tablet Version*/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;
+		width: 50%;
+	}
+	.col-md-12{
+		float: left;
+		width: 100%;
+	}
+}
+
+
+/*Mobile Version*/
+@media(max-width: 767px){
+	.col-sm-12{
+		float: left;
+		width: 100%;
+	}
+}
+
